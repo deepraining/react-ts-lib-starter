@@ -3,6 +3,10 @@ const rename = require('gulp-rename');
 const less = require('gulp-less');
 const scss = require('gulp-sass');
 const babel = require('gulp-babel');
+const typescript = require('gulp-typescript');
+
+const ts = typescript.createProject('tsconfig.json');
+const tsd = typescript.createProject('tsconfig.d.json');
 
 gulp.task('less', () =>
   gulp
@@ -24,7 +28,8 @@ gulp.task('scss', () =>
 
 gulp.task('babel:lib', () =>
   gulp
-    .src('src/**/*.{js,jsx}')
+    .src('src/**/*.{ts,tsx}')
+    .pipe(ts())
     .pipe(
       babel({
         babelrc: false,
@@ -45,7 +50,8 @@ gulp.task('babel:lib', () =>
 
 gulp.task('babel:es', () =>
   gulp
-    .src('src/**/*.{js,jsx}')
+    .src('src/**/*.{ts,tsx}')
+    .pipe(ts())
     .pipe(
       babel({
         babelrc: false,
@@ -61,5 +67,13 @@ gulp.task('babel:es', () =>
         ],
       }),
     )
+    .pipe(gulp.dest('es')),
+);
+
+gulp.task('d.ts', () =>
+  gulp
+    .src('src/**/*.{ts,tsx}')
+    .pipe(tsd())
+    .pipe(gulp.dest('lib'))
     .pipe(gulp.dest('es')),
 );

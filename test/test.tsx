@@ -3,7 +3,7 @@ import * as Enzyme from 'enzyme';
 import * as Adapter from 'enzyme-adapter-react-16';
 import { Hello } from '../src';
 
-Enzyme.configure({ adapter: new Adapter() });
+Enzyme.configure({ adapter: new Adapter.default() });
 
 test('Hello component', () => {
   const hello = Enzyme.shallow(<Hello name="test" />);
