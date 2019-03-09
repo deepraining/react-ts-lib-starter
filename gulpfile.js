@@ -26,7 +26,7 @@ gulp.task('scss', () =>
     .pipe(gulp.dest('es')),
 );
 
-gulp.task('babel:lib', () =>
+gulp.task('lib', () =>
   gulp
     .src('src/**/*.{ts,tsx}')
     .pipe(ts())
@@ -48,7 +48,7 @@ gulp.task('babel:lib', () =>
     .pipe(gulp.dest('lib')),
 );
 
-gulp.task('babel:es', () =>
+gulp.task('es', () =>
   gulp
     .src('src/**/*.{ts,tsx}')
     .pipe(ts())
