@@ -18,11 +18,11 @@ npm run storybook       # 使用 storybook 开发组件
 npm run build           # 构建发布文件
 ```
 
-## Features
+## 特性
 
-- [less](http://lesscss.org/), [scss](https://sass-lang.com/) style languages support.
-- [TypeScript](http://www.typescriptlang.org/) language, [jest](https://jestjs.io/en/) + [enzyme](https://github.com/airbnb/enzyme) test support.
-- Using [storybook](https://storybook.js.org/) to develop, preview components.
+- [less](http://lesscss.org/), [scss](https://sass-lang.com/) 样式语言支持.
+- [TypeScript](http://www.typescriptlang.org/) 语法, [jest](https://jestjs.io/en/) + [enzyme](https://github.com/airbnb/enzyme) 测试支持.
+- 使用 [storybook](https://storybook.js.org/) 开发、预览组件.
 
 ## 项目
 
