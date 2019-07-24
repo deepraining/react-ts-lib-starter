@@ -1,42 +1,42 @@
 # react-ts-lib-starter
 
-[English Documentation](./README.en.md)
+[中文文档](./README.md)
 
-一个用于快速创建 React 组件库的模板脚手架，使用 Typescript 与 Storybook 构建.
+A boilerplate for creating a React library, using Typescript and Storybook.
 
-## 快速开始
+## Getting started
 
 ```
 git clone https://github.com/senntyou/react-ts-lib-starter.git --depth=1
 
 cd react-ts-lib-starter
 
-npm install             # 安装依赖
+npm install             # install dependencies
 
-npm run storybook       # 使用 storybook 开发组件
+npm run storybook       # develop using storybook
 
-npm run build           # 构建发布文件
+npm run build           # build distribution files
 ```
 
 ## Features
 
 - [less](http://lesscss.org/), [scss](https://sass-lang.com/) style languages support.
 - [TypeScript](http://www.typescriptlang.org/) language, [jest](https://jestjs.io/en/) + [enzyme](https://github.com/airbnb/enzyme) test support.
-- Using [storybook](https://storybook.js.org/) to develop, preview components.
+- Using [storybook](https://storybook.js.org/) to develop, preview, deploy static site.
 
-## 项目
+## Project
 
 ```
 - src
-  - index.{ts,tsx}           # ts 入口文件
+  - index.{ts,tsx}           # ts entry file
   - styles
-    - index.{less,scss}      # 样式入口文件
+    - index.{less,scss}      # style entry file
 
 - .storybook                 # for storybook
 - stories                    # for storybook
 ```
 
-样式默认使用 `less` 语言, 如果你想使用 `scss` 语言, 可以修改 `package.json`:
+By default, styles use `less` language, if you want to use `scss` language, you should modify `package.json` by:
 
 ```
 "scripts": {
