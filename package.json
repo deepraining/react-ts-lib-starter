@@ -1,7 +1,7 @@
 {
   "name": "react-ts-lib-starter",
   "version": "0.1.0",
-  "description": "React TypeScript Lib Starter - A boilerplate for creating a React library, using Typescript and Storybook.",
+  "description": "A boilerplate for creating a React library, using Typescript and Storybook.",
   "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "lib/index.d.ts",
